@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css">
+  <title>Calculator</title>
+</head>
+<body>
+    <section class="calculator">
+        <div class="copy" id="copy"></div>
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <button class="clear" onclick="clears()">C</button>
+            <button class="delete" onclick="del()">D</button>
+            <button class="operator" onclick="operator('/')">/</button>
+            <button class="operator" onclick="operator('*')">*</button>
+            
+            <button onclick="inputValue(7)">7</button>
+            <button onclick="inputValue(8)">8</button>
+            <button onclick="inputValue(9)">9</button>
+            <button class="operator" onclick="operator('-')">-</button>
+            
+            <button onclick="inputValue(4)">4</button>
+            <button onclick="inputValue(5)">5</button>
+            <button onclick="inputValue(6)">6</button>
+            <button class="operator" onclick="operator('+')">+</button>
+            
+            <button onclick="inputValue(1)">1</button>
+            <button onclick="inputValue(2)">2</button>
+            <button onclick="inputValue(3)">3</button>
+            <button class="operator" onclick="operator('%')">%</button>
+            
+            <button onclick="inputValue(0)">0</button>
+            <button onclick="inputValue('.')">.</button>
+            <button class="equal" onclick="calculate()">=</button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

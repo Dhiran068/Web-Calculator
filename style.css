@@ -1,0 +1,68 @@
+body {
+  background-color: #f0f0f0;
+  font-family: "poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.calculator {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  width: 300px;
+}
+
+.display {
+  background-color: #cccccc;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  padding: 15px;
+  padding-top: 10px;
+  border-radius: 0px 0px 5px 5px;
+  text-align: right;
+  margin-bottom: 20px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.copy {
+  background-color: #cccccc;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  padding: 15px 15px 0px 0px;
+  border-radius: 5px 5px 0px 0px;
+  text-align: right;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.buttons button {
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttons button:active {
+  background-color: #666;
+  transform: scale(0.99);
+}
+
+.buttons .equal {
+  background-color: #ffa200;
+  grid-column: span 2;
+}
+
+
